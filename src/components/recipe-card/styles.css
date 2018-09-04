@@ -1,0 +1,11 @@
+.recipe {
+  width: 300px;
+  padding: 0.5rem;
+  color: #424242;
+  font-size: 0.75rem;
+  background-color: #fff;
+}
+
+.img {
+  display: block;
+}
