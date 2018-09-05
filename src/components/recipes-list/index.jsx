@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { NavLink, withRouter } from 'react-router-dom';
 // components
 import RecipeCard from '../recipe-card';
-
 // actions
 import fetchRecipes from '../../redux/actions/recipes';
 // selectors
@@ -17,12 +16,6 @@ class RecipesList extends Component {
   componentDidMount() {
     this.getRecipes();
   }
-
-  // shouldComponentUpdate(nextProps) {
-  //   const { recipes } = nextProps;
-  //   if (recipes.length !== 0) return false;
-  //   return true;
-  // }
 
   getRecipes = () => {
     const { fetchRecipes: getRecipes } = this.props;

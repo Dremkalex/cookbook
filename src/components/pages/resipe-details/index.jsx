@@ -30,8 +30,8 @@ class ResipeDetails extends Component {
 
   handleGoBack = () => {
     const { title } = this.state;
-    const { startMakingRecipe: start } = this.props;
-    start(title);
+    const { startMakingRecipe: startCook } = this.props;
+    startCook(title);
 
     const { history } = this.props;
     return history.push({

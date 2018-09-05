@@ -5,6 +5,11 @@
   background-color: #e0e0e0;
 }
 
+.wrapper h1 {
+  font-family: 'Cookie', cursive;
+  font-size: 3rem;
+}
+
 .main {
   padding: 1rem;
 }

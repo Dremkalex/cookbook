@@ -1,15 +1,12 @@
 import { RECIPE_IN_PROGRESS, RECIPE_DONE } from './types';
 
-const startMakingRecipe = id => ({
+const startMakingRecipe = title => ({
   type: RECIPE_IN_PROGRESS,
-  payload: id,
+  payload: title,
 });
 
-const finishMakingRecipe = () => {
-  console.log('finish action!');
-  return {
-    type: RECIPE_DONE,
-  };
-};
+const finishMakingRecipe = () => ({
+  type: RECIPE_DONE,
+});
 
 export { startMakingRecipe, finishMakingRecipe };

@@ -10,9 +10,9 @@ const Notification = ({ recipeName }) => (
   <div>
     {(recipeName && (
       <h2>
-        Recipe <span className={styles.span}>{recipeName}</span> preparing...
+        <span className={styles.span}>{recipeName}</span> is cooking...
       </h2>
-    )) || <h2>No recepie is being prepared</h2>}
+    )) || <h2>No one recipe is cooking now</h2>}
   </div>
 );
 

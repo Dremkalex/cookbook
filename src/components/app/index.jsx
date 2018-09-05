@@ -11,6 +11,7 @@ import styles from './styles.css';
 
 const App = () => (
   <div className={styles.wrapper}>
+    <h1>Cook Book</h1>
     <Panel>
       <main className={styles.main}>
         <Switch>

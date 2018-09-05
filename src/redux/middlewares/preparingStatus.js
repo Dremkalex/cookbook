@@ -14,12 +14,10 @@ const throttle = store => next => action => {
 
   throttled[type] = true;
 
-  console.log('before set timeout');
   setTimeout(() => {
     throttled[type] = false;
-    console.log('inside set timeout adter 3s');
     store.dispatch(finishMakingRecipe());
-  }, 20000);
+  }, 10000);
 
   return next(action);
 };
