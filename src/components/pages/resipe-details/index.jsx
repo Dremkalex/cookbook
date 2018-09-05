@@ -6,7 +6,10 @@ import Button from '../../shared-ui/button';
 // servises
 import { fetchRecipeById } from '../../../servises/api';
 // selectors
-import { getIdFromProps } from '../../../redux/selectors/recipes';
+import {
+  getIdFromProps,
+  getRecipesFromState,
+} from '../../../redux/selectors/recipes';
 // action
 import { startMakingRecipe } from '../../../redux/actions/recipe-status';
 
@@ -60,7 +63,7 @@ const mstp = (state, props) => {
   const id = getIdFromProps(props);
 
   return {
-    recipe: state.recipes.items.find(recipe => recipe.id === id),
+    recipe: getRecipesFromState(state).find(recipe => recipe.id === id),
   };
 };
 
